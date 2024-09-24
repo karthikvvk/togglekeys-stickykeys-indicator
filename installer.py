@@ -1,5 +1,15 @@
-import os
-import win32com.client
+import os, time
+
+try:
+    import win32com.client
+except:
+    print("pls connect to internet to download pypiwin32, \nThis is needed to create shortcut in startup folder for autostart")
+    os.system("pip install pypiwin32")
+    import win32com.client
+
+print("""due to the acuring of key-state at starting the "anti-virus" may block the installation, 
+thus make sure to analyse the code and trust the project""")
+time.sleep(3)
 
 username = os.getlogin()
 pa = f"C:\\Users\\{username}"
