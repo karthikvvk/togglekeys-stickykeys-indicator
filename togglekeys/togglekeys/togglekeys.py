@@ -1,3 +1,6 @@
+"""due to the acuring of key-state at starting the "anti-virus" may block the installation, 
+thus make sure to analyse the code and trust the project"""
+
 import os
 from pynput.keyboard import Key, Listener
 from threading import *
